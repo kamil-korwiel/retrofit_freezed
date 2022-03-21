@@ -23,13 +23,13 @@ class _$CardBackTearOff {
   const _$CardBackTearOff();
 
   _CardBack call(
-      {@JsonKey(name: 'cardBackId') String? cardBackId,
-      @JsonKey(name: 'name') required String name,
-      @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'howToGet') String? howToGet,
-      @JsonKey(name: 'enabled') bool? enabled,
-      @JsonKey(name: 'img') String? img,
-      @JsonKey(name: 'imgAnimated') String? imgAnimated}) {
+      {String? cardBackId,
+      required String name,
+      String? description,
+      String? howToGet,
+      bool? enabled,
+      String? img,
+      String? imgAnimated}) {
     return _CardBack(
       cardBackId: cardBackId,
       name: name,
@@ -51,19 +51,12 @@ const $CardBack = _$CardBackTearOff();
 
 /// @nodoc
 mixin _$CardBack {
-  @JsonKey(name: 'cardBackId')
   String? get cardBackId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name')
   String get name => throw _privateConstructorUsedError;
-  @JsonKey(name: 'description')
   String? get description => throw _privateConstructorUsedError;
-  @JsonKey(name: 'howToGet')
   String? get howToGet => throw _privateConstructorUsedError;
-  @JsonKey(name: 'enabled')
   bool? get enabled => throw _privateConstructorUsedError;
-  @JsonKey(name: 'img')
   String? get img => throw _privateConstructorUsedError;
-  @JsonKey(name: 'imgAnimated')
   String? get imgAnimated => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -77,13 +70,13 @@ abstract class $CardBackCopyWith<$Res> {
   factory $CardBackCopyWith(CardBack value, $Res Function(CardBack) then) =
       _$CardBackCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'cardBackId') String? cardBackId,
-      @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'howToGet') String? howToGet,
-      @JsonKey(name: 'enabled') bool? enabled,
-      @JsonKey(name: 'img') String? img,
-      @JsonKey(name: 'imgAnimated') String? imgAnimated});
+      {String? cardBackId,
+      String name,
+      String? description,
+      String? howToGet,
+      bool? enabled,
+      String? img,
+      String? imgAnimated});
 }
 
 /// @nodoc
@@ -143,13 +136,13 @@ abstract class _$CardBackCopyWith<$Res> implements $CardBackCopyWith<$Res> {
       __$CardBackCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'cardBackId') String? cardBackId,
-      @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'howToGet') String? howToGet,
-      @JsonKey(name: 'enabled') bool? enabled,
-      @JsonKey(name: 'img') String? img,
-      @JsonKey(name: 'imgAnimated') String? imgAnimated});
+      {String? cardBackId,
+      String name,
+      String? description,
+      String? howToGet,
+      bool? enabled,
+      String? img,
+      String? imgAnimated});
 }
 
 /// @nodoc
@@ -208,37 +201,30 @@ class __$CardBackCopyWithImpl<$Res> extends _$CardBackCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_CardBack implements _CardBack {
   _$_CardBack(
-      {@JsonKey(name: 'cardBackId') this.cardBackId,
-      @JsonKey(name: 'name') required this.name,
-      @JsonKey(name: 'description') this.description,
-      @JsonKey(name: 'howToGet') this.howToGet,
-      @JsonKey(name: 'enabled') this.enabled,
-      @JsonKey(name: 'img') this.img,
-      @JsonKey(name: 'imgAnimated') this.imgAnimated});
+      {this.cardBackId,
+      required this.name,
+      this.description,
+      this.howToGet,
+      this.enabled,
+      this.img,
+      this.imgAnimated});
 
   factory _$_CardBack.fromJson(Map<String, dynamic> json) =>
       _$$_CardBackFromJson(json);
 
   @override
-  @JsonKey(name: 'cardBackId')
   final String? cardBackId;
   @override
-  @JsonKey(name: 'name')
   final String name;
   @override
-  @JsonKey(name: 'description')
   final String? description;
   @override
-  @JsonKey(name: 'howToGet')
   final String? howToGet;
   @override
-  @JsonKey(name: 'enabled')
   final bool? enabled;
   @override
-  @JsonKey(name: 'img')
   final String? img;
   @override
-  @JsonKey(name: 'imgAnimated')
   final String? imgAnimated;
 
   @override
@@ -287,36 +273,29 @@ class _$_CardBack implements _CardBack {
 
 abstract class _CardBack implements CardBack {
   factory _CardBack(
-      {@JsonKey(name: 'cardBackId') String? cardBackId,
-      @JsonKey(name: 'name') required String name,
-      @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'howToGet') String? howToGet,
-      @JsonKey(name: 'enabled') bool? enabled,
-      @JsonKey(name: 'img') String? img,
-      @JsonKey(name: 'imgAnimated') String? imgAnimated}) = _$_CardBack;
+      {String? cardBackId,
+      required String name,
+      String? description,
+      String? howToGet,
+      bool? enabled,
+      String? img,
+      String? imgAnimated}) = _$_CardBack;
 
   factory _CardBack.fromJson(Map<String, dynamic> json) = _$_CardBack.fromJson;
 
   @override
-  @JsonKey(name: 'cardBackId')
   String? get cardBackId;
   @override
-  @JsonKey(name: 'name')
   String get name;
   @override
-  @JsonKey(name: 'description')
   String? get description;
   @override
-  @JsonKey(name: 'howToGet')
   String? get howToGet;
   @override
-  @JsonKey(name: 'enabled')
   bool? get enabled;
   @override
-  @JsonKey(name: 'img')
   String? get img;
   @override
-  @JsonKey(name: 'imgAnimated')
   String? get imgAnimated;
   @override
   @JsonKey(ignore: true)

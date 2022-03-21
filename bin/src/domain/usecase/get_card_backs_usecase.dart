@@ -1,6 +1,6 @@
 import '../../core/resources/data_state.dart';
 import '../../core/usecase/usecase.dart';
-import '../entities/cardback.dart';
+import '../entities/cardback/cardback.dart';
 import '../repositories/heartsone_repository.dart';
 
 class GetCardBacksUseCase implements UseCase<DataState<List<CardBack>>,void >{
