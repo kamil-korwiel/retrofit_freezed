@@ -1,11 +1,13 @@
 import 'package:dio/dio.dart';
 
-import '../../core/utils/http_status_code.dart';
-import '../../core/resources/data_state.dart';
-import '../../domain/entities/cardback/cardback.dart';
-import '../../domain/entities/cardfront/cardfront.dart';
-import '../../domain/repositories/heartsone_repository.dart';
-import '../remote/heartsone_api_service.dart';
+import '../../../core/utils/http_status_code.dart';
+import '../../../core/resources/data_state.dart';
+
+import '../../datasources/remote/heartsone_api_service.dart';
+import '../../model/cardback/cardback.dart';
+import '../../model/cardfront/cardfront.dart';
+import '../abstract/heartsone_repository.dart';
+
 
 class HeartsoneRepositoryImpl implements HeartStoneRepository {
   final HeartStoneApiService _heartStoneApiService;

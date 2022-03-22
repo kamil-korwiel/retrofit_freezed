@@ -29,7 +29,7 @@ class _HeartStoneApiService implements HeartStoneApiService {
                 .compose(_dio.options, '/cardbacks',
                     queryParameters: queryParameters, data: _data)
                 .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    var value = _result.data!
+    var value = _result.data!.where((element) => element["img"] != null && (element["type"] != "Enchantment"))
         .map((dynamic i) => CardBack.fromJson(i as Map<String, dynamic>))
         .toList();
     final httpResponse = HttpResponse(value, _result);
@@ -48,7 +48,7 @@ class _HeartStoneApiService implements HeartStoneApiService {
                 .compose(_dio.options, '/cards/sets/${name}',
                     queryParameters: queryParameters, data: _data)
                 .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    var value = _result.data!
+    var value = _result.data!.where((element) => element["img"] != null && (element["type"] != "Enchantment"))
         .map((dynamic i) => CardFront.fromJson(i as Map<String, dynamic>))
         .toList();
     final httpResponse = HttpResponse(value, _result);

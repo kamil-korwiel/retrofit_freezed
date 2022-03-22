@@ -1,7 +1,6 @@
-import '../../core/resources/data_state.dart';
-import '../entities/cardback/cardback.dart';
-import '../entities/cardfront/cardfront.dart';
-
+import '../../../core/resources/data_state.dart';
+import '../../model/cardback/cardback.dart';
+import '../../model/cardfront/cardfront.dart';
 
 abstract class HeartStoneRepository {
 

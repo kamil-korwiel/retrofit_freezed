@@ -2,9 +2,11 @@ import 'package:dio/dio.dart';
 import 'package:retrofit/dio.dart';
 import 'package:retrofit/retrofit.dart' as Retrofit;
 
-import '../../core/utils/constants.dart';
-import '../../domain/entities/cardback/cardback.dart';
-import '../../domain/entities/cardfront/cardfront.dart';
+import '../../../core/utils/constants.dart';
+import '../../model/cardback/cardback.dart';
+import '../../model/cardfront/cardfront.dart';
+
+
 
 
 // import '../../core/utils/constants.dart';
